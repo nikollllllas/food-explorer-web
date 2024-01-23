@@ -39,7 +39,7 @@ export default {
         100: '#065E7C',
         200: '#82F3FF'
       },
-      CARROT: '#FBA94C', 
+      CARROT: '#FBA94C',
       MINT: '#04D361'
     }
   }
