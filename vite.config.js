@@ -3,9 +3,16 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  server:{
+  plugins: [
+    react({
+      include: '**/*.jsx'
+    })
+  ],
+  server: {
     host: 'localhost',
     port: 3334,
+    watch: {
+      usePolling: true
+    }
   }
 })

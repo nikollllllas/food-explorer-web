@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-  padding: 1rem 3rem;
+  padding: 1.2rem 3.2rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 8px;
 
   color: ${({ theme }) => theme.darkTheme.LIGHT[100]};
   background: ${({ theme }) => theme.darkTheme.TINTS.TOMATO[100]};
@@ -14,7 +14,8 @@ export const Container = styled.button`
   border: 0;
   border-radius: 5px;
 
-  font: 14px 'Poppins', sans-serif;
+  font: 1.4rem;
+  text-align: center;
 
   &:hover {
     transition: 0.2s ease-in-out;
