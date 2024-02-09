@@ -1,27 +1,37 @@
 import logo from '../../assets/logo.svg'
 import { Button } from '../../components/Button'
-import { Container, Form } from './styles'
-import { Input } from '../../components/Input'
 import { ButtonText } from '../../components/ButtonText/ButtonText'
+import { Input } from '../../components/Input'
+import { Container, Form } from './styles'
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <div>
         <img
           src={logo}
-          alt={'Logo FoodExplorer'}
+          alt={'Logo Food Explorer'}
         />
         <h1>food explorer</h1>
       </div>
+
       <Form>
-        <h1>Faça login</h1>
+        <h1>Crie sua conta</h1>
+
+        <div>
+          <label>Seu nome</label>
+          <Input
+            type={'text'}
+            placeholder={'Ex.: Teste de Souza'}
+            label={'Seu nome'}
+          />
+        </div>
 
         <div>
           <label>Email</label>
           <Input
             type={'email'}
-            placeholder={'Ex.: test@email.com'}
+            placeholder={'Ex.: exemplo@exemplo.com'}
             label={'Email'}
           />
         </div>
@@ -30,13 +40,13 @@ export function SignIn() {
           <label>Senha</label>
           <Input
             type={'password'}
-            placeholder={'Insira sua senha'}
+            placeholder={'Sua senha'}
             label={'Senha'}
           />
         </div>
 
-        <Button title={'Entrar'} />
-        <ButtonText title={'Criar uma conta'} />
+        <Button title='Entrar' />
+        <ButtonText title={'Já tenho uma conta'} />
       </Form>
     </Container>
   )

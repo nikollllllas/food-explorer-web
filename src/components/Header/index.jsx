@@ -36,7 +36,6 @@ export function Header({ isAdmin }) {
       ) : (
         <Button
           icon={Receipt}
-          title={'Pedidos (0)'}
         />
       )}
 

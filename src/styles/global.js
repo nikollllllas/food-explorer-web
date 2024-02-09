@@ -31,6 +31,7 @@ export default createGlobalStyle`
 
   body {
     min-height: 100vh;
+    background-color: ${({ theme }) => theme.darkTheme.DARK[100]};
   }
 
   a {

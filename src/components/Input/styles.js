@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 0.75rem 0;
+  padding: 0.2rem 0;
   width: 344px;
   display: flex;
   align-items: center;
@@ -9,8 +9,15 @@ export const Container = styled.div`
 
   gap: 0.875rem;
 
+  border: 1px solid ${({ theme }) => theme.darkTheme.LIGHT[400]};
+  border-radius: 0.4rem;
+
   background-color: ${({ theme }) => theme.darkTheme.DARK[900]};
   color: ${({ theme }) => theme.darkTheme.LIGHT[500]};
+
+  &::placeholder {
+    color: ${({ theme }) => theme.darkTheme.LIGHT[400]};
+  }
 
   > input {
     width: 100%;
