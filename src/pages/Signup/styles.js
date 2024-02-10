@@ -27,6 +27,13 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  a {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.darkTheme.LIGHT[100]};
+  }
 `
 
 export const Form = styled.form`

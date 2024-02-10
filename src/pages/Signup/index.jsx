@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import { Button } from '../../components/Button'
-import { ButtonText } from '../../components/ButtonText/ButtonText'
 import { Input } from '../../components/Input'
 import { Container, Form } from './styles'
 
@@ -46,7 +46,7 @@ export function SignUp() {
         </div>
 
         <Button title='Entrar' />
-        <ButtonText title={'Já tenho uma conta'} />
+        <Link to={'/'}>Já tenho uma conta</Link>
       </Form>
     </Container>
   )

@@ -2,7 +2,7 @@ import logo from '../../assets/logo.svg'
 import { Button } from '../../components/Button'
 import { Container, Form } from './styles'
 import { Input } from '../../components/Input'
-import { ButtonText } from '../../components/ButtonText/ButtonText'
+import { Link } from 'react-router-dom'
 
 export function SignIn() {
   return (
@@ -36,7 +36,7 @@ export function SignIn() {
         </div>
 
         <Button title={'Entrar'} />
-        <ButtonText title={'Criar uma conta'} />
+        <Link to={'/register'}>Criar uma conta</Link>
       </Form>
     </Container>
   )

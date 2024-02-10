@@ -60,4 +60,11 @@ export const Form = styled.form`
     font-weight: 400;
     color: ${({ theme }) => theme.darkTheme.LIGHT[400]};
   }
+
+  a {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.darkTheme.LIGHT[100]};
+  }
 `
