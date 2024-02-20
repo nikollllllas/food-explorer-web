@@ -40,7 +40,7 @@ export const Container = styled.div`
   }
 `
 export const Search = styled.div`
-  width: 60%;
+  width: 4.8rem;
   display: flex;
   border-radius: 0.3rem;
   background-color: ${({ theme }) => theme.darkTheme.DARK[900]};

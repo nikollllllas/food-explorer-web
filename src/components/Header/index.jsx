@@ -20,7 +20,7 @@ export function Header({ isAdmin }) {
 
       <div>
         <h1>food explorer </h1>
-        <span>admin</span>
+        {isAdmin ? <span>Admin</span> : ''}
       </div>
 
       <Search>
@@ -31,13 +31,7 @@ export function Header({ isAdmin }) {
         />
       </Search>
 
-      {isAdmin ? (
-        <Button title={'Novo prato'} />
-      ) : (
-        <Button
-          icon={Receipt}
-        />
-      )}
+      {isAdmin ? <Button title={'Novo prato'} /> : <Button icon={Receipt} />}
 
       <SignOut />
     </Container>
