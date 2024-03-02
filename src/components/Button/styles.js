@@ -29,7 +29,7 @@ export const Container = styled.button`
 
   > svg {
     color: ${({ theme }) => theme.darkTheme.LIGHT[100]};
-    width: 32px;
-    height: 32px;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 `

@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 
   background: ${({ theme }) => theme.darkTheme.DARK[400]};
 
@@ -20,11 +18,4 @@ export const Container = styled.div`
     height: 3.6rem;
   }
 
-  > div {
-    display: flex;
-    gap: 1.6rem;
-
-    align-items: center;
-    justify-content: center;
-  }
 `

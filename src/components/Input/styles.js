@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   padding: 0.2rem 0;
-  width: 344px;
+  margin: auto 0;
+  width: 58rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   gap: 0.875rem;
 
-  border: 1px solid ${({ theme }) => theme.darkTheme.LIGHT[400]};
   border-radius: 0.4rem;
 
   background-color: ${({ theme }) => theme.darkTheme.DARK[900]};
