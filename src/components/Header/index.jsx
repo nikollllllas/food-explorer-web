@@ -1,4 +1,4 @@
-import { Container, LogoContainer, Search } from './styles'
+import { ButtonsContainer, Container, LogoContainer, Search } from './styles'
 import { Button } from '../Button'
 import { MagnifyingGlass, Receipt, SignOut } from '@phosphor-icons/react'
 import { Input } from '../Input'
@@ -32,19 +32,20 @@ export function Header({ isAdmin }) {
         />
       </Search>
 
-      {isAdmin ? (
-        <Button title={'Novo prato'} />
-      ) : (
-        <Button
-          icon={Receipt}
-          title={'Pedidos (0)'}
+      <ButtonsContainer>
+        {isAdmin ? (
+          <Button title={'Novo prato'} />
+        ) : (
+          <Button
+            icon={Receipt}
+            title={'Pedidos (0)'}
+          />
+        )}
+        <SignOut
+          size={32}
+          color='white'
         />
-      )}
-
-      <SignOut
-        size={32}
-        color='white'
-      />
+      </ButtonsContainer>
     </Container>
   )
 }

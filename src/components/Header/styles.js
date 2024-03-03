@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   background-color: ${({ theme }) => theme.darkTheme.DARK[600]};
 
@@ -25,7 +25,7 @@ export const Container = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   align-items: end;
-  gap: 0.6rem;
+  gap: 1.6rem;
 
   div {
     display: flex;
@@ -53,4 +53,10 @@ export const Search = styled.div`
   border-radius: 0.3rem;
   background-color: ${({ theme }) => theme.darkTheme.DARK[900]};
   justify-content: center;
+`
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 `
